@@ -9,34 +9,34 @@ const Navigation = () => {
           <li>Home</li>
         </NavLink>
         <NavLink
-          to="/drawing"
+          to="/dessin"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li>Drawing</li>
+          <li>Dessin</li>
         </NavLink>
         <NavLink
-          to="/hook"
+          to="/crochet"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li>Hook</li>
+          <li>Crochet</li>
         </NavLink>
         <NavLink
-          to="/cross-stitch"
+          to="/point-de-croix"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li>Cross-stitch</li>
+          <li>Point de croix</li>
         </NavLink>
         <NavLink
-          to="/other"
+          to="/autre"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li>Other</li>
+          <li>Autre</li>
         </NavLink>
         <NavLink
-          to="/about"
+          to="/infos"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li>About</li>
+          <li>Infos</li>
         </NavLink>
       </ul>
     </div>

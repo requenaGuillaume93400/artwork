@@ -22,19 +22,34 @@ import flowersSmall from "../assets/img/other/flowers.jpg";
 import lightningSmall from "../assets/img/other/lightning.jpg";
 
 const Home = () => {
-  const drawingElements = [fishSmall, japanSmall, hexagonSmall, spiralSmall];
-  const hookElements = [childSmall, mouseSmall];
-  const crossStitchElements = [flowerSmall, womanSmall];
-  const otherElements = [eclairSmall, flowersSmall, lightningSmall];
+  const drawingElements = [
+    { image: fishSmall, category: "Gaming", description: "description" },
+    { image: japanSmall, category: "Gaming", description: "description" },
+    { image: hexagonSmall, category: "Nature", description: "description" },
+    { image: spiralSmall, category: "Autre", description: "description" },
+  ];
+  const hookElements = [
+    { image: childSmall, category: "category", description: "description" },
+    { image: mouseSmall, category: "Animaux", description: "description" },
+  ];
+  const crossStitchElements = [
+    { image: flowerSmall, category: "Autre", description: "description" },
+    { image: womanSmall, category: "Autre", description: "description" },
+  ];
+  const otherElements = [
+    { image: eclairSmall, category: "Nourriture", description: "description" },
+    { image: flowersSmall, category: "Autre", description: "description" },
+    { image: lightningSmall, category: "Autre", description: "description" },
+  ];
 
   return (
     <div>
       <Navigation />
 
-      <Section elements={drawingElements} title="Drawing" />
-      <Section elements={hookElements} title="Hook" />
-      <Section elements={crossStitchElements} title="Cross Stitch" />
-      <Section elements={otherElements} title="Other" />
+      <Section elements={drawingElements} title="Dessin" />
+      <Section elements={hookElements} title="Crochet" />
+      <Section elements={crossStitchElements} title="Point de croix" />
+      <Section elements={otherElements} title="Autre" />
     </div>
   );
 };

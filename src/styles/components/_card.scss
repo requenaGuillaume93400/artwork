@@ -1,4 +1,46 @@
 .card {
-  width: 25%;
-  height: 18vw;
+  width: 24%;
+  height: 25.1vw;
+
+  font-style: italic;
+  overflow: hidden;
+
+  p {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+}
+
+.cardImage {
+  display: block;
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.cardSeparator {
+  position: relative;
+  margin: 1rem;
+  height: 1px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgb(48, 49, 51),
+      transparent
+    );
+  }
 }
