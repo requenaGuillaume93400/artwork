@@ -2,9 +2,9 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import Section from "../components/Section";
 
-import eclairSmall from "../assets/img/other/eclair.jpg";
-import flowersSmall from "../assets/img/other/flowers.jpg";
-import lightningSmall from "../assets/img/other/lightning.jpg";
+import eclairSmall from "../assets/img/other/eclair-small.jpg";
+import flowersSmall from "../assets/img/other/flowers-small.jpg";
+import lightningSmall from "../assets/img/other/lightning-small.jpg";
 
 const Other = () => {
   const otherElements = [

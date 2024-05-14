@@ -2,8 +2,8 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import Section from "../components/Section";
 
-import flowerSmall from "../assets/img/cross-stitch/flower.jpg";
-import womanSmall from "../assets/img/cross-stitch/woman.jpg";
+import flowerSmall from "../assets/img/cross-stitch/flower-small.jpg";
+import womanSmall from "../assets/img/cross-stitch/woman-small.jpg";
 
 const CrossStitch = () => {
   const crossStitchElements = [

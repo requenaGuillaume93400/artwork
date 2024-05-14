@@ -9,17 +9,17 @@ import hexagonSmall from "../assets/img/drawing/hexagon-small.jpg";
 import spiralSmall from "../assets/img/drawing/spiral-small.jpg";
 
 // Hook
-import childSmall from "../assets/img/hook/childs.jpg";
-import mouseSmall from "../assets/img/hook/mouse.jpg";
+import childSmall from "../assets/img/hook/childs-small.jpg";
+import mouseSmall from "../assets/img/hook/mouse-small.jpg";
 
 // Cross stitch
-import flowerSmall from "../assets/img/cross-stitch/flower.jpg";
-import womanSmall from "../assets/img/cross-stitch/woman.jpg";
+import flowerSmall from "../assets/img/cross-stitch/flower-small.jpg";
+import womanSmall from "../assets/img/cross-stitch/woman-small.jpg";
 
 // Other
-import eclairSmall from "../assets/img/other/eclair.jpg";
-import flowersSmall from "../assets/img/other/flowers.jpg";
-import lightningSmall from "../assets/img/other/lightning.jpg";
+import eclairSmall from "../assets/img/other/eclair-small.jpg";
+import flowersSmall from "../assets/img/other/flowers-small.jpg";
+import lightningSmall from "../assets/img/other/lightning-small.jpg";
 
 const Home = () => {
   const drawingElements = [

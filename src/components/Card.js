@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Slugify from "./../service/Slugify";
+import Modal from "./Modal";
 
 const Card = ({ element, section }) => {
+  const imageUrl = element.image;
+
   const styleObject = {
-    background: `url(${element.image}) center/cover`,
+    background: `url(${imageUrl}) center/cover`,
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
   };
 
   return (
     <div className="card">
-      <div className="cardImage" style={styleObject}></div>
+      <Modal
+        isOpen={isModalOpen}
+        closeModal={() => setIsModalOpen(false)}
+        imageUrl={imageUrl}
+      />
+      <div className="cardImage" style={styleObject} onClick={openModal}></div>
       <div className="cardSeparator"></div>
       <h3>
         <NavLink
