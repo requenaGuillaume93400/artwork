@@ -1,9 +1,10 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import Slugify from "./../service/Slugify";
 
-const Filters = ({ title, slugify }) => {
+const Filters = ({ title, category }) => {
   const filters = ["gaming", "animaux", "nature", "nourriture", "autre"];
-  const slugyfiedTitle = `/${slugify(title)}`;
+  const slugyfiedTitle = `/${Slugify(title)}`;
 
   const navigate = useNavigate();
 
@@ -21,6 +22,7 @@ const Filters = ({ title, slugify }) => {
               name="filter"
               id={filter}
               onChange={() => handleRadioChange(filter)}
+              checked={category === filter}
             />
             <label htmlFor={filter}>{filter}</label>
           </div>
