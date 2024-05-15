@@ -2,10 +2,10 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import Section from "../components/Section";
 
-import fishSmall from "../assets/img/drawing/fish-small.png";
-import japanSmall from "../assets/img/drawing/japan-small.jpg";
-import hexagonSmall from "../assets/img/drawing/hexagon-small.jpg";
-import spiralSmall from "../assets/img/drawing/spiral-small.jpg";
+import fishSmall from "../assets/img/dessin/fish-small.png";
+import japanSmall from "../assets/img/dessin/japan-small.jpg";
+import hexagonSmall from "../assets/img/dessin/hexagon-small.jpg";
+import spiralSmall from "../assets/img/dessin/spiral-small.jpg";
 
 const Drawing = () => {
   const drawingElements = [

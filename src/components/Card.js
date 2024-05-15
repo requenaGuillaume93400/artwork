@@ -22,6 +22,7 @@ const Card = ({ element, section }) => {
         isOpen={isModalOpen}
         closeModal={() => setIsModalOpen(false)}
         imageUrl={imageUrl}
+        section={section}
       />
       <div className="cardImage" style={styleObject} onClick={openModal}></div>
       <div className="cardSeparator"></div>

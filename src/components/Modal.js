@@ -1,11 +1,11 @@
 import React from "react";
 
-const Modal = ({ isOpen, closeModal, imageUrl }) => {
+const Modal = ({ isOpen, closeModal, imageUrl, section }) => {
   const fileName = imageUrl.split(".")[0].split("/").pop();
   const newFileName = fileName.replace(/-small/, "-medium");
-  const newUrl = imageUrl.replace(fileName, newFileName);
+  const imagePath = `img/${section}/${newFileName}.jpg`;
 
-  //   alert(newUrl);
+  console.log(imagePath);
 
   if (!isOpen) {
     return null;
@@ -17,8 +17,7 @@ const Modal = ({ isOpen, closeModal, imageUrl }) => {
         <span className="close" onClick={closeModal}>
           &times;
         </span>
-        <img src={newUrl} alt={fileName} />
-        <p>Modal content goes here.</p>
+        <img src={imagePath} alt={fileName} />
       </div>
     </div>
   );

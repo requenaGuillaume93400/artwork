@@ -2,8 +2,8 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import Section from "../components/Section";
 
-import childSmall from "../assets/img/hook/childs-small.jpg";
-import mouseSmall from "../assets/img/hook/mouse-small.jpg";
+import childSmall from "../assets/img/crochet/childs-small.jpg";
+import mouseSmall from "../assets/img/crochet/mouse-small.jpg";
 
 const Hook = () => {
   const hookElements = [
