@@ -8,3 +8,9 @@
     margin-right: 10px;
   }
 }
+
+@media screen and (max-width: 861px) {
+  .flex {
+    justify-content: space-evenly;
+  }
+}

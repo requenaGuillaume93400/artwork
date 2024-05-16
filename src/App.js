@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Drawing from "./pages/Drawing";
 import Hook from "./pages/Hook";
 import CrossStitch from "./pages/CrossStitch";
@@ -17,7 +16,6 @@ function App() {
         <Route path="/crochet" element={<Hook />} />
         <Route path="/point-de-croix" element={<CrossStitch />} />
         <Route path="/autre" element={<Other />} />
-        <Route path="/infos" element={<About />} />
 
         <Route path="*" element={<Home />} />
       </Routes>
