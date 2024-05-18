@@ -5,8 +5,6 @@ const Modal = ({ isOpen, closeModal, imageUrl, section }) => {
   const newFileName = fileName.replace(/-small/, "-medium");
   const imagePath = `img/${section}/${newFileName}.jpg`;
 
-  console.log(imagePath);
-
   if (!isOpen) {
     return null;
   }

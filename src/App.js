@@ -5,6 +5,7 @@ import Drawing from "./pages/Drawing";
 import Hook from "./pages/Hook";
 import CrossStitch from "./pages/CrossStitch";
 import Other from "./pages/Other";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 
         <Route path="*" element={<Home />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
